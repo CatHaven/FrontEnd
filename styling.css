@@ -1,0 +1,165 @@
+/*****
+
+Colour-guide
+************
+#F6BD60 - yellow
+#F7EDE2 - light pink
+#F5CAC3 - pink
+#84A59D - green
+#F28482 - dark pink
+
+Table of Contents
+*****************
+1. Body Style
+2. h1 Style
+3. Paragraph style
+4. Flex Containers
+5. Buttons Style
+6. Image Style
+
+*****/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+/***
+1. Body Style
+***/
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/***
+2. h1 Style
+***/
+
+h1
+{
+    align-items: center;
+    color:#F7EDE2;
+    font-weight: 900;
+    font-family: 'Work Sans', sans-serif;
+	font-size: 3.5rem;
+    margin-bottom: 0;
+}
+
+.subtitle
+{
+    color:#F5CAC3;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0.67em;
+}
+
+.featured
+{
+    color:#84A59D;
+    font-size: 2.5rem;
+    margin: 1em;
+    margin-top: 0;
+}
+
+
+/***
+43. Paragraph Style
+***/
+
+p
+{
+    align-items: center;
+    color:#F28482;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+	font-size: 1rem;
+}
+
+.homequestion
+{
+    align-items: left;
+    color:#F7EDE2; 
+    margin-right: 2em;
+}
+
+/***
+4. Flex Container Style
+***/
+
+.flex-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-container-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/***
+5. Buttons Style
+***/
+
+button
+{
+    border: none;
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+}
+
+.registernow
+{
+    background-color: #F6BD60;
+    border: 2px solid #84A59D;
+    border-radius: 0.2em;
+    color: #84A59D;
+    padding: 0.8em 2em; 
+    display: inline-block; 
+    margin-top: 5em;
+    margin-bottom: 5em;
+    
+}
+
+.registernow:hover
+{
+    color: #F7EDE2;
+    border-color: #F7EDE2;
+}
+
+.viewcats
+{
+    background-color: #F7EDE2;
+    border: 2px solid #F6BD60;
+    border-radius: 0.2em;
+    color: #F6BD60;
+    padding: 0.8em 2em; 
+    display: inline-block; 
+    margin: 1em;
+    
+}
+
+.viewcats:hover
+{
+    color: #F5CAC3;
+    border-color: #F5CAC3;
+}
+
+/***
+6. Image Style
+***/
+
+
+
+.featured-image
+{
+    border: 2px solid #F7EDE2;
+    border-radius: 0.2em;
+    margin: 1em;
+}
