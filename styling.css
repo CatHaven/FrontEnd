@@ -16,6 +16,7 @@ Table of Contents
 4. Flex Containers
 5. Buttons Style
 6. Image Style
+7. Form Style
 
 *****/
 
@@ -59,6 +60,13 @@ h1
     font-size: 2.5rem;
     margin: 1em;
     margin-top: 0;
+}
+
+.login
+{
+    color:#F28482;
+    font-size: 2.2rem;
+    margin: 0.5em;
 }
 
 
@@ -155,11 +163,26 @@ button
 6. Image Style
 ***/
 
-
-
 .featured-image
 {
     border: 2px solid #F7EDE2;
     border-radius: 0.2em;
     margin: 1em;
+}
+
+/***
+7. Form Style
+***/
+
+label
+{
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 2em;
+}
+
+
+input
+{
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 1em;
 }
