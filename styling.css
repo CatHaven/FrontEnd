@@ -17,6 +17,7 @@ Table of Contents
 5. Buttons Style
 6. Image Style
 7. Form Style
+8. NavBar Style
 
 *****/
 
@@ -186,3 +187,70 @@ input
     font-family: 'Work Sans', sans-serif;
     margin-bottom: 1em;
 }
+
+
+/***
+7. Form Style
+***/
+
+#unique-navbar .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F28482;
+    padding: 10px 2.5%; /*First value = height */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#unique-navbar .logo img {
+    height: 60px;
+    width: auto;
+}
+
+#unique-navbar .navbar-links {
+    display: flex;
+}
+
+#unique-navbar .navbar-links ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#unique-navbar .navbar-links ul li {
+    list-style: none;
+    margin-right: 20px;  /* Adjust this value as needed */
+}
+
+#unique-navbar .navbar-links ul li:last-child {
+    margin-right: 0;  /* Remove right margin from last item */
+}
+
+#unique-navbar .navbar-links ul li a {
+    text-decoration: none;
+    color: #F7EDE2;
+}
+
+#unique-navbar .navbar-links ul li a:hover {
+    color: #F6BD60;
+}
+
+#unique-navbar .login a {
+    text-decoration: none;
+    color: #F6BD60;
+    border: 2px solid #F6BD60; /* Add a border */
+    padding: 0.8em 2em; /* Add some padding */
+    border-radius: 0.2em; /* Optional: round the corners a bit */
+    display: inline-block; /* Necessary for padding to take effect */
+    background-color: #F7EDE2;
+}
+
+#unique-navbar .login a:hover {
+    color: #F5CAC3;
+    border-color: #F5CAC3; /* Change the border color on hover */
+}
+
+/* End of Navigation Bar CSS */
