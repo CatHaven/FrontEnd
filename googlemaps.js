@@ -13,11 +13,17 @@ var map;
             });
 
             var locations = [
-                {lat: 42.3052, lng: -83.0671, url: 'https://www.uwindsor.ca'}, // University of Windsor
-                {lat: 42.2763, lng: -83.0085, url: 'https://www.devonshiremall.com'}, // Devonshire Mall
-                {lat: 42.2756, lng: -82.9656, url: 'https://www.yqg.ca'}  // Windsor International Airport
+                {lat: 42.2594118, lng: -82.9831094, url: 'https://windsorhumane.org/cats-kittens'}, // Windsor Humane Society
+                {lat: 42.3261236, lng: -83.0772083, url: 'http://tlcanimalaid.org/'}, // TLC Animal Aid
+                {lat: 42.279714, lng: -83.0730214, url: 'https://olafsrescue.carrd.co/'},  // Olaf's Feline Rescue & Sanctuary
+                {lat: 42.292761, lng: -82.987662, url: 'http://www.omgcattery.com/'},  //Ohemgee Cattery Windsor
+                {lat: 42.2984522, lng: -83.1727042, url: 'https://store.petvalu.ca/location/2330/'},  //Pet Valu
+                {lat: 42.2525865, lng: -82.9657254, url: 'https://www.petsmart.ca/stores/ca/on/windsor-store0923.html?utm_source=google&utm_medium=organic&utm_campaign=google-my-business'},  //Petsmart
+                {lat: 42.3136413, lng: -82.9069139,url: 'http://eriewildliferescue.ca/'}, //Erie Wildlife Rescue
+                {lat: 42.2579945, lng: -82.9694488,url: 'https://www.renspets.com/'}, //Ren's Pets
+                {lat: 42.2258323, lng: -83.0985999,url: 'http://www.omgcattery.com/'}, //Ohemgee Cattery Lasalle
             ];
-
+            //Function to create markers on the map
             for (var i = 0; i < locations.length; i++) {
                 var marker = new google.maps.Marker({
                     position: locations[i],
