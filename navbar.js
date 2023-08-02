@@ -24,10 +24,10 @@ navbarLinks.classList.add('navbar-links');
 
 const links = [
     {name: 'Home', link: 'home.html'},
-    {name: 'Pet List', link: 'pets.html'},
+    {name: 'Pet List', link: 'petlist.html'},
     {name: 'Maps', link: 'maps.html'},
     {name: 'My Account', link: 'account.html'},
-    {name: 'Pet Care', link: 'care.html'}
+    {name: 'Pet Care', link: 'petcare.html'}
 ];
 const ul = document.createElement('ul');
 
