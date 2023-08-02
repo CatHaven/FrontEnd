@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>My Google Maps Demo</h3>
+    <label>Radius (in km): <input id="radius" type="range" min="1" max="30" step="1" value="5" onchange="changeRadius()"></label>
+    <button id="centerButton" onclick="centerAtUser()">Center At My Location</button>
+    <div id="map" style="height: 500px;"></div>
+    <script>
+        var map;
+        var circle;
+
+        function initMap() {
+            var defaultLocation = {lat: 42.3074, lng: -83.0634};  // University of Windsor
+            createMap(defaultLocation);
+        }
+
+        function createMap(centerLocation) {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: centerLocation,
+                zoom: 14
+            });
+
+            var locations = [
+                {lat: 42.3052, lng: -83.0671, url: 'https://www.uwindsor.ca'}, // University of Windsor
+                {lat: 42.2763, lng: -83.0085, url: 'https://www.devonshiremall.com'}, // Devonshire Mall
+                {lat: 42.2756, lng: -82.9656, url: 'https://www.yqg.ca'}  // Windsor International Airport
+            ];
+
+            for (var i = 0; i < locations.length; i++) {
+                var marker = new google.maps.Marker({
+                    position: locations[i],
+                    map: map,
+                });
+
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        window.location.href = locations[i].url;
+                    }
+                })(marker, i));
+            }
+
+            circle = new google.maps.Circle({
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35,
+                map: map,
+                center: centerLocation,
+                radius: parseInt(document.getElementById('radius').value) * 1000 // Convert km to meters
+            });
+        }
+
+        function changeRadius() {
+            var radiusInput = document.getElementById('radius');
+            var radiusInKm = parseInt(radiusInput.value);
+            circle.setRadius(radiusInKm * 1000); // Convert km to meters
+        }
+
+        function centerAtUser() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    var currentLocation = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                    map.setCenter(currentLocation);
+                    circle.setCenter(currentLocation);
+                });
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArBIg50Ku4QTfoyPSW3xbA3cUh_VjZlsI&callback=initMap"
+    async defer></script>
+</body>
+</html>
