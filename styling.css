@@ -18,6 +18,7 @@ Table of Contents
 6. Image Style
 7. Form Style
 8. NavBar Style
+9. Footer Style
 
 *****/
 
@@ -190,7 +191,7 @@ input
 
 
 /***
-7. Form Style
+8. NavBar Style
 ***/
 
 #unique-navbar .navbar {
@@ -254,3 +255,36 @@ input
 }
 
 /* End of Navigation Bar CSS */
+/***
+9. Footer Style
+***/
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 4em;
+    width: auto;
+    margin-right: 20px;
+    position: absolute;
+    left: 30em;
+}
+
+#footer_text {
+    text-align: center;
+    color: #F5CAC3;
+    align-items: center;
+}
+
+#footer_text a {
+    color: #F5CAC3;
+    text-decoration: none;
+}
+
+#footer_text a:hover {
+    color: #F28482;
+}
+/* End of Footer CSS */
