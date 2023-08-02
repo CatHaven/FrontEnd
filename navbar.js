@@ -8,7 +8,7 @@ const logo = document.createElement('div');
 logo.classList.add('logo');
 
 const logoLink = document.createElement('a');
-logoLink.href = 'index.html';
+logoLink.href = 'home.html';
 
 const logoImage = document.createElement('img');
 logoImage.src = 'images/logo.png';
