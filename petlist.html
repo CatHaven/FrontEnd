@@ -1,8 +1,31 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="styling.css">
+<link rel="stylesheet" href="styling.css" />
+
 <head>
     <title>CatHaven</title>
+    <script>
+        const URL = "http://localhost:3000/api/users/cats";
+        async function getCatWeek() {
+            const result = await fetch(URL);
+            result.json().then((data) => {
+                const petList = document.getElementById("petlist");
+
+                const colour = document.createElement("h1");
+                const diet = document.createElement("h1");
+
+                catName.textContent = data[0]["CatName"];
+                colour.textContent = `Colour: ${data[0]["Colour"]}`;
+                colour.classList.add("featured");
+
+                diet.textContent = `Diet: ${data[0]["Diet"]}`;
+                diet.classList.add("featured");
+                catweek.append(colour);
+                catweek.append(diet);
+            });
+        }
+        getCatWeek();
+    </script>
 </head>
 
 <nav>
@@ -11,24 +34,28 @@
 </nav>
 
 <body>
-    <div class="flex-container" style="background-color:white">
-        <h1 style="margin: 0.67em; color:#84A59D;">Cat List</h1>
-        <h1 class = "subtitle">Find your purrfect match here!</h1>
+    <div class="flex-container" style="background-color: white">
+        <h1 style="margin: 0.67em; color: #84a59d">Cat List</h1>
+        <h1 class="subtitle">Find your purrfect match here!</h1>
     </div>
 
-     <!-- Add pets here -->
-    <div class="flex-container" style="background-color:#F7EDE2">
-
-    </div>
+    <!-- Add pets here -->
+    <div id="petlist" class="flex-container" style="background-color: #f7ede2"></div>
 </body>
 
-<footer style="background-color: #F7EDE2; color: #fff; padding: 20px; display: flex; align-items: center;">
-    <img src="images/logo.png" alt="Cat Haven Logo" style="margin-right: 20px;">
-    <div id = "footer_text">
-        <a href = "mailto:info@cathaven.com">info@cathaven.com</a><br>
-        <a href = "https://www.instagram.com/cathavenbr/?hl=en">Instagram</a><br>
-        <a href = "https://twitter.com/cathavenbr?lang=en">Twitter</a><br>
-        <a href = "https://www.facebook.com/cathavenbatonrouge/">Facebook</a>
+<footer style="
+      background-color: #f7ede2;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    ">
+    <img src="images/logo.png" alt="Cat Haven Logo" style="margin-right: 20px" />
+    <div id="footer_text">
+        <a href="mailto:info@cathaven.com">info@cathaven.com</a><br />
+        <a href="https://www.instagram.com/cathavenbr/?hl=en">Instagram</a><br />
+        <a href="https://twitter.com/cathavenbr?lang=en">Twitter</a><br />
+        <a href="https://www.facebook.com/cathavenbatonrouge/">Facebook</a>
     </div>
 </footer>
 
