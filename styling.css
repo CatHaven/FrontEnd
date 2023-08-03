@@ -92,6 +92,13 @@ p
     margin-right: 2em;
 }
 
+.card-text
+{
+    align-items: left;
+    color: #84A59D;
+    margin: 0.4em; 
+}
+
 
 /***
 4. Flex Container Style
@@ -173,6 +180,12 @@ button
     border: 2px solid #F7EDE2;
     border-radius: 0.2em;
     margin: 1em;
+}
+
+.card
+{
+    width: 150em;
+    height: 225em;
 }
 
 /***
