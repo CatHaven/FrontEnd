@@ -220,7 +220,7 @@ input
     justify-content: space-between;
     align-items: center;
     background-color: #F28482;
-    padding: 10px 2.5%; /*First value = height */
+    padding: 1px 2.5%; /*First value = height */
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
     font-size: 1.3em;
@@ -261,6 +261,7 @@ input
 }
 
 #unique-navbar .login a {
+    font-size: 0.6em;
     text-decoration: none;
     color: #F6BD60;
     border: 2px solid #F6BD60; /* Add a border */
