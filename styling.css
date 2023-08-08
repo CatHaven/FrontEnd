@@ -302,6 +302,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Wrap content if there isn't enough space */
 }
 
 footer img {
@@ -309,7 +310,7 @@ footer img {
     width: auto;
     margin-right: 20px;
     position: absolute;
-    left: 30em;
+    left: 32vw;
 }
 
 #footer_text {
@@ -326,6 +327,20 @@ footer img {
 #footer_text a:hover {
     color: #F28482;
 }
+
+/* Image size change for small screens, like mobile devices */
+@media (max-width: 768px) {
+    footer {
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    footer img {
+        height: 3em;
+        margin-right: 10px;
+    }
+}
+
 /* End of Footer CSS */
 
 /***
