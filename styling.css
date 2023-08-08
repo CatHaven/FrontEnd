@@ -19,6 +19,9 @@ Table of Contents
 7. Form Style
 8. NavBar Style
 9. Footer Style
+10. Maps Style
+11. Cat Page Style
+12. Misc Style
 
 *****/
 
@@ -97,6 +100,14 @@ p
     align-items: left;
     color: #84A59D;
     margin: 0.4em; 
+}
+
+.account-text
+{
+    align-items: left;
+    color: #F28482;
+    margin: 0.4em; 
+    font-size: 1.2rem;
 }
 
 
@@ -401,4 +412,16 @@ h3 {
     }
 .cat-stats li {
     list-style-type: none;
+}
+
+/***
+12. Misc Style
+***/
+
+hr
+{
+    width: 30em;
+    height: 0.1em;
+    background-color: #F5CAC3;
+    margin: 0;
 }
