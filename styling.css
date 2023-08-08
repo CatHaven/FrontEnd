@@ -134,6 +134,8 @@ button
 
 .registernow
 {
+    text-decoration: none;
+    font-weight: bold;
     background-color: #F6BD60;
     border: 2px solid #84A59D;
     border-radius: 0.2em;
