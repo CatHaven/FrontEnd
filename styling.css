@@ -134,6 +134,7 @@ button
 
 .registernow
 {
+    font-family: 'Work Sans', sans-serif;
     text-decoration: none;
     font-weight: bold;
     background-color: #F6BD60;
@@ -149,12 +150,14 @@ button
 
 .registernow:hover
 {
+    font-family: 'Work Sans', sans-serif;
     color: #F7EDE2;
     border-color: #F7EDE2;
 }
 
 .viewcats
 {
+    font-family: 'Work Sans', sans-serif;
     text-decoration: none;
     font-weight: bold;
     background-color: #F7EDE2;
@@ -169,6 +172,7 @@ button
 
 .viewcats:hover
 {
+    font-family: 'Work Sans', sans-serif;
     color: #F5CAC3;
     border-color: #F5CAC3;
 }

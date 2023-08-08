@@ -12,15 +12,13 @@
           const catweek = document.getElementById("catWeek");
           const catName = document.getElementById("catname");
 
-          const colour = document.createElement("h1");
-          const diet = document.createElement("h1");
+          const colour = document.createElement("p");
+          const diet = document.createElement("p");
 
           catName.textContent = data[0]["CatName"];
           colour.textContent = `Colour: ${data[0]["Colour"]}`;
-          colour.classList.add("featured");
 
           diet.textContent = `Diet: ${data[0]["Diet"]}`;
-          diet.classList.add("featured");
           catweek.append(colour);
           catweek.append(diet);
         });
