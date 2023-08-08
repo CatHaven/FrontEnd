@@ -9,24 +9,26 @@
     <script src="navbar.js"></script>
 </nav>
 <body>
+    <div class="flex-container">
+        <h1 style="margin: 0.67em; color: #84a59d">Find my Nearest Cat!</h1>
+    </div>
+
     <div id = "overallMapBody">
-        <div class="flex-container" style="background-color:#F5CAC3;">
-            <h1 class="login">Find my Nearest Cat!</h1>
-        </div>
-        
+        <br>
         <div class="flex-container" style="background-color:#F7EDE2;">
-            <label>Radius: <span id="radiusLabel">2</span> km</label><br>
+            <label style="color: #F28482; font-size: 1.1rem;">Radius: <span id="radiusLabel">2</span> km</label>
+            <br>
             <input id="radius" type="range" min="1" max="30" step="1" value="2" onchange="changeRadius()">
             <button id="centerButton" onclick="centerAtUser()">Center At My Location</button>
         </div>
         <div id = "mapContainer">
-        <div id="map"></div>
-    </div>
+            <div id="map"></div>
+        </div>
 
-    <script src = "googlemaps.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArBIg50Ku4QTfoyPSW3xbA3cUh_VjZlsI&callback=initMap"
-    async defer></script>
-</div>
+        <script src = "googlemaps.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArBIg50Ku4QTfoyPSW3xbA3cUh_VjZlsI&callback=initMap"
+        async defer></script>
+    </div>
 </body>
 
 <footer style="background-color: #F7EDE2; color: #fff; padding: 20px; display: flex; align-items: center;">
