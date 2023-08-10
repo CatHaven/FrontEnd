@@ -13,77 +13,36 @@
 
 <body>
   <div class="flex-container" style="background-color: white">
-    <h1 style="margin-top: 0.67em; color: #84a59d">Cat List</h1>
+    <h1 style="margin-top: 0.67em; color: #84a59d">Meet The Cats</h1>
     <h1 class="subtitle">Find your purrfect match here!</h1>
   </div>
-  
 
   <!-- Add pets here -->
-  <div class="flex-container-row" style="flex-wrap: wrap; background-color:#F7EDE2">
+  <div id="petlist" class="flex-container-row" style="flex-wrap: wrap; background-color: #f7ede2">
     <!-- start of card -->
-    <div class="flex-container"
-      style="background-color:#F5CAC3; border: 2px solid #F28482; border-radius:0.2em; margin:1em;">
-      <img width="150em" height="225em" src="FeaturedCat.jpg">
-      <p class="card-text">Dakota</p>
-      <p class="card-text">Male</p>
-      <p class="card-text">200</p>
-      <p class="card-text">London</p>
-
-    </div>
-    <div class="flex-container"
-      style="background-color:#F5CAC3; border: 2px solid #F28482; border-radius:0.2em; margin:1em;">
-      <img width="150em" height="225em" src="FeaturedCat.jpg">
-      <p class="card-text">Phoenix</p>
-      <p class="card-text">Male</p>
-      <p class="card-text">200</p>
-      <p class="card-text">London</p>
-
-    </div>
-    <div class="flex-container"
-      style="background-color:#F5CAC3; border: 2px solid #F28482; border-radius:0.2em; margin:1em;">
-      <img width="150em" height="225em" src="FeaturedCat.jpg">
-      <p class="card-text">Dakota</p>
-      <p class="card-text">Male</p>
-      <p class="card-text">200</p>
-      <p class="card-text">London</p>
-
-    </div>
-
-    <div class="flex-container"
-      style="background-color:#F5CAC3; border: 2px solid #F28482; border-radius:0.2em; margin:1em;">
-      <img width="150em" height="225em" src="FeaturedCat.jpg">
-      <p class="card-text">Dakota</p>
-      <p class="card-text">Male</p>
-      <p class="card-text">200</p>
-      <p class="card-text">London</p>
-
-    </div>
-
   </div>
 
   <div class="flex-container-row" style="background-color: #f28482">
-    <p class="homequestion">
-      Check out our featured cat here!
-    </p>
-    <a class="viewcats" href = "petlist.html">Featured Cat</a>
+    <p class="homequestion">Check out our featured cat here!</p>
+    <a class="viewcats" id="featured">Featured Cat</a>
   </div>
-
+  <script src="petlist.js"></script>
 </body>
 
-  <footer style="
+<footer style="
       background-color: #f7ede2;
       color: #fff;
       padding: 20px;
       display: flex;
       align-items: center;
     ">
-    <img src="images/logo.png" alt="Cat Haven Logo" style="margin-right: 20px" />
-    <div id="footer_text">
-      <a href="mailto:info@cathaven.com">info@cathaven.com</a><br />
-      <a href="https://www.instagram.com/cathavenbr/?hl=en">Instagram</a><br />
-      <a href="https://twitter.com/cathavenbr?lang=en">Twitter</a><br />
-      <a href="https://www.facebook.com/cathavenbatonrouge/">Facebook</a>
-    </div>
-  </footer>
+  <img src="images/logo.png" alt="Cat Haven Logo" style="margin-right: 20px" />
+  <div id="footer_text">
+    <a href="mailto:info@cathaven.com">info@cathaven.com</a><br />
+    <a href="https://www.instagram.com/cathavenbr/?hl=en">Instagram</a><br />
+    <a href="https://twitter.com/cathavenbr?lang=en">Twitter</a><br />
+    <a href="https://www.facebook.com/cathavenbatonrouge/">Facebook</a>
+  </div>
+</footer>
 
 </html>

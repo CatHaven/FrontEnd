@@ -25,272 +25,246 @@ Table of Contents
 
 *****/
 
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap");
 
 /***
 1. Body Style
 ***/
 
-body, html {
-    margin: 0;
-    padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
 /***
 2. h1 Style
 ***/
 
-h1
-{
-    align-items: center;
-    color:#F7EDE2;
-    font-weight: 900;
-    font-family: 'Work Sans', sans-serif;
-	font-size: 3.5rem;
-    margin-bottom: 0;
+h1 {
+  align-items: center;
+  color: #f7ede2;
+  font-weight: 900;
+  font-family: "Work Sans", sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 0;
 }
 
-.subtitle
-{
-    color:#F5CAC3;
-    font-weight: 700;
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 0.67em;
+.subtitle {
+  color: #f5cac3;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.67em;
 }
 
-.featured
-{
-    color:#84A59D;
-    font-size: 2.5rem;
-    margin: 1em;
-    margin-top: 0;
+.featured {
+  color: #84a59d;
+  font-size: 2.5rem;
+  margin: 1em;
+  margin-top: 0;
 }
 
-.login
-{
-    color:#F28482;
-    font-size: 2.2rem;
-    margin: 0.5em;
+.login {
+  color: #f28482;
+  font-size: 2.2rem;
+  margin: 0.5em;
 }
-
 
 /***
 3. Paragraph Style
 ***/
 
-p
-{
-    align-items: center;
-    color:#F28482;
-    font-weight: 500;
-    font-family: 'Work Sans', sans-serif;
-	font-size: 1rem;
+p {
+  align-items: center;
+  color: #f28482;
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
 }
 
-.homequestion
-{
-    align-items: left;
-    color:#F7EDE2; 
-    margin-right: 2em;
+.homequestion {
+  align-items: left;
+  color: #f7ede2;
+  margin-right: 2em;
 }
 
-.card-text
-{
-    align-items: left;
-    color: #84A59D;
-    margin: 0.4em; 
+.card-text {
+  align-items: left;
+  color: #84a59d;
+  margin: 0.4em;
 }
 
-.account-text
-{
-    align-items: left;
-    color: #F28482;
-    margin: 0.4em; 
-    font-size: 1.2rem;
+.account-text {
+  align-items: left;
+  color: #f28482;
+  margin: 0.4em;
+  font-size: 1.2rem;
 }
-
 
 /***
 4. Flex Container Style
 ***/
 
-.flex-container
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.flex-container-row
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+.flex-container-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 /***
 5. Buttons Style
 ***/
 
-button
-{
-    border: none;
-    font-weight: 700;
-    font-size: 1em;
-    text-align: center;
+button {
+  border: none;
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center;
 }
 
-.registernow
-{
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #F6BD60;
-    border: 2px solid #84A59D;
-    border-radius: 0.2em;
-    color: #84A59D;
-    padding: 0.8em 2em; 
-    display: inline-block; 
-    margin-top: 5em;
-    margin-bottom: 5em;
-    
+.registernow {
+  font-family: "Work Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #f6bd60;
+  border: 2px solid #84a59d;
+  border-radius: 0.2em;
+  color: #84a59d;
+  padding: 0.8em 2em;
+  display: inline-block;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
-.registernow:hover
-{
-    font-family: 'Work Sans', sans-serif;
-    color: #F7EDE2;
-    border-color: #F7EDE2;
+.registernow:hover {
+  font-family: "Work Sans", sans-serif;
+  color: #f7ede2;
+  border-color: #f7ede2;
 }
 
-.viewcats
-{
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #F7EDE2;
-    border: 2px solid #F6BD60;
-    border-radius: 0.2em;
-    color: #F6BD60;
-    padding: 0.8em 2em; 
-    display: inline-block; 
-    margin: 1em;
-    
+.viewcats {
+  font-family: "Work Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #f7ede2;
+  border: 2px solid #f6bd60;
+  border-radius: 0.2em;
+  color: #f6bd60;
+  padding: 0.8em 2em;
+  display: inline-block;
+  margin: 1em;
 }
 
-.viewcats:hover
-{
-    font-family: 'Work Sans', sans-serif;
-    color: #F5CAC3;
-    border-color: #F5CAC3;
+.viewcats:hover {
+  font-family: "Work Sans", sans-serif;
+  color: #f5cac3;
+  border-color: #f5cac3;
 }
 
 /***
 6. Image Style
 ***/
 
-.featured-image
-{
-    border: 2px solid #F7EDE2;
-    border-radius: 0.2em;
-    margin: 1em;
+.featured-image {
+  border: 2px solid #f7ede2;
+  border-radius: 0.2em;
+  margin: 1em;
 }
 
-.card
-{
-    width: 150em;
-    height: 225em;
+.card {
+  width: 150em;
+  height: 225em;
 }
 
 /***
 7. Form Style
 ***/
 
-label
-{
-    font-family: 'Work Sans', sans-serif;
-    margin-top: 2em;
+label {
+  font-family: "Work Sans", sans-serif;
+  margin-top: 2em;
 }
 
-.distance
-{
-
+.distance {
 }
 
-
-input
-{
-    font-family: 'Work Sans', sans-serif;
-    margin-bottom: 1em;
+input {
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 1em;
 }
-
 
 /***
 8. NavBar Style
 ***/
 
 #unique-navbar .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #F28482;
-    padding: 1px 2.5%; /*First value = height */
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bold;
-    font-size: 1.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f28482;
+  padding: 1px 2.5%; /*First value = height */
+  font-family: "Work Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 
 #unique-navbar .logo img {
-    height: 60px;
-    width: auto;
+  height: 60px;
+  width: auto;
 }
 
 #unique-navbar .navbar-links {
-    display: flex;
+  display: flex;
 }
 
 #unique-navbar .navbar-links ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
 }
 
 #unique-navbar .navbar-links ul li {
-    list-style: none;
-    margin-right: 20px;  /* Adjust this value as needed */
+  list-style: none;
+  margin-right: 20px; /* Adjust this value as needed */
 }
 
 #unique-navbar .navbar-links ul li:last-child {
-    margin-right: 0;  /* Remove right margin from last item */
+  margin-right: 0; /* Remove right margin from last item */
 }
 
 #unique-navbar .navbar-links ul li a {
-    text-decoration: none;
-    color: #F7EDE2;
+  text-decoration: none;
+  color: #f7ede2;
 }
 
 #unique-navbar .navbar-links ul li a:hover {
-    color: #F6BD60;
+  color: #f6bd60;
 }
 
 #unique-navbar .login a {
-    font-size: 0.6em;
-    text-decoration: none;
-    color: #F6BD60;
-    border: 2px solid #F6BD60; /* Add a border */
-    padding: 0.8em 2em; /* Add some padding */
-    border-radius: 0.2em; /* Optional: round the corners a bit */
-    display: inline-block; /* Necessary for padding to take effect */
-    background-color: #F7EDE2;
+  font-size: 0.6em;
+  text-decoration: none;
+  color: #f6bd60;
+  border: 2px solid #f6bd60; /* Add a border */
+  padding: 0.8em 2em; /* Add some padding */
+  border-radius: 0.2em; /* Optional: round the corners a bit */
+  display: inline-block; /* Necessary for padding to take effect */
+  background-color: #f7ede2;
 }
 
 #unique-navbar .login a:hover {
-    color: #F5CAC3;
-    border-color: #F5CAC3; /* Change the border color on hover */
+  color: #f5cac3;
+  border-color: #f5cac3; /* Change the border color on hover */
 }
 
 /* End of Navigation Bar CSS */
@@ -298,47 +272,47 @@ input
 9. Footer Style
 ***/
 footer {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Wrap content if there isn't enough space */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap content if there isn't enough space */
 }
 
 footer img {
-    height: 4em;
-    width: auto;
-    margin-right: 20px;
-    position: absolute;
-    left: 32vw;
+  height: 4em;
+  width: auto;
+  margin-right: 20px;
+  position: absolute;
+  left: 32vw;
 }
 
 #footer_text {
-    text-align: center;
-    color: #F5CAC3;
-    align-items: center;
+  text-align: center;
+  color: #f5cac3;
+  align-items: center;
 }
 
 #footer_text a {
-    color: #F5CAC3;
-    text-decoration: none;
+  color: #f5cac3;
+  text-decoration: none;
 }
 
 #footer_text a:hover {
-    color: #F28482;
+  color: #f28482;
 }
 
 /* Image size change for small screens, like mobile devices */
 @media (max-width: 768px) {
-    footer {
-        justify-content: space-around;
-        padding: 10px;
-    }
+  footer {
+    justify-content: space-around;
+    padding: 10px;
+  }
 
-    footer img {
-        height: 3em;
-        margin-right: 10px;
-    }
+  footer img {
+    height: 3em;
+    margin-right: 10px;
+  }
 }
 
 /* End of Footer CSS */
@@ -351,91 +325,97 @@ footer img {
 /* Slider */
 /* Style for slider */
 #overallMapBody {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F5CAC3;
-    background-size:auto;
-    background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5cac3;
+  background-size: auto;
+  background-position: center;
 }
 h3 {
-    color: #333;
-    margin-top: 20px;
+  color: #333;
+  margin-top: 20px;
 }
 
-#radius, #centerButton {
-    margin: 10px 0;
+#radius,
+#centerButton {
+  margin: 10px 0;
 }
 
 #radius {
-    width: 300px;
+  width: 300px;
 }
 
 #centerButton {
-    background-color: #F6BD60;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+  background-color: #f6bd60;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 #centerButton:hover {
-    background-color: #F7EDE2;
+  background-color: #f7ede2;
 }
 /* Map Edit*/
 #map {
-    width: 80%;
-    height: 500px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  width: 80%;
+  height: 500px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 #mapContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 #map {
-    height:40em;
-    width:70em;
+  height: 40em;
+  width: 70em;
 }
 
 /***
 11. Cat Page Style
 ***/
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .cat-stats {
-    color: #84A59D;
-    margin-top: 20px;
-    }
+  color: #84a59d;
+  margin-top: 20px;
+}
 .cat-stats li {
-    list-style-type: none;
+  list-style-type: none;
+}
+.petlistcard {
+  background-color: #f5cac3;
+  border: 2px solid #f28482;
+  border-radius: 0.2em;
+  margin: 1em;
 }
 
 /***
 12. Misc Style
 ***/
 
-hr
-{
-    width: 30em;
-    height: 0.1em;
-    background-color: #F5CAC3;
-    margin: 0;
+hr {
+  width: 30em;
+  height: 0.1em;
+  background-color: #f5cac3;
+  margin: 0;
 }
