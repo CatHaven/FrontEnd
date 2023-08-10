@@ -13,7 +13,7 @@ async function getCats() {
     for (var i in data) {
       pet = data[i];
       pet_img = document.createElement("img");
-      pet_img.src = `FeaturedCat.jpg`;
+      pet_img.src = `images/${pet.CatName}.jpg`;
       pet_img.width = 150;
       pet_img.height = 225;
       let petCard = document.createElement("div");

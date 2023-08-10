@@ -1,89 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="styling.css" />
+<link rel="stylesheet" href="styling.css" />
 
-  <head>
-    <title>CatHaven</title>
-    <script>
-      const URL = "http://localhost:3000/api/users/catweek";
-      async function getCatWeek() {
-        const result = await fetch(URL);
-        result.json().then((data) => {
-          const catweek = document.getElementById("catWeek");
-          const catName = document.getElementById("catname");
+<head>
+  <title>CatHaven</title>
+  <script>
+    const URL = "http://localhost:3000/api/users/catweek";
+    async function getCatWeek() {
+      const result = await fetch(URL);
+      result.json().then((data) => {
+        const catweek = document.getElementById("catWeek");
+        const catName = document.getElementById("catname");
+        const catImage = document.getElementById("catImage");
+        catImage.src = `images/${data[0].CatName}.jpg`;
 
-          const colour = document.createElement("p");
-          const diet = document.createElement("p");
+        const colour = document.createElement("p");
+        const diet = document.createElement("p");
 
-          catName.textContent = data[0]["CatName"];
-          colour.textContent = `Colour: ${data[0]["Colour"]}`;
+        catName.textContent = data[0]["CatName"];
+        colour.textContent = `Colour: ${data[0]["Colour"]}`;
 
-          diet.textContent = `Diet: ${data[0]["Diet"]}`;
-          catweek.append(colour);
-          catweek.append(diet);
-        });
-      }
-      getCatWeek();
-    </script>
-  </head>
+        diet.textContent = `Diet: ${data[0]["Diet"]}`;
+        catweek.append(colour);
+        catweek.append(diet);
+      });
+    }
+    getCatWeek();
+  </script>
+</head>
 
-  <nav>
-    <header id="unique-navbar"></header>
-    <script src="navbar.js"></script>
-  </nav>
+<nav>
+  <header id="unique-navbar"></header>
+  <script src="navbar.js"></script>
+</nav>
 
-  <body>
-    <div class="flex-container" style="background-color: #84a59d">
-      <h1>Cat Haven</h1>
-      <h1 class="subtitle">One Purrfect Match at a Time!</h1>
+<body>
+  <div class="flex-container" style="background-color: #84a59d">
+    <h1>Cat Haven</h1>
+    <h1 class="subtitle">One Purrfect Match at a Time!</h1>
+  </div>
+
+  <div class="flex-container" style="background-color: white">
+    <a href="login.html" class="registernow">Register Now!</a>
+  </div>
+
+  <!-- This section needs to be linked to the database -->
+  <div class="flex-container-row" style="background-color: #f5cac3">
+    <img id="catImage" width="300em" height="450em" class="featured-image" />
+    <div id="catWeek" class="flex-container">
+      <h1 style="font-size: 2rem">Cat of the week:</h1>
+      <h1 id="catname" class="featured">Featured Cat</h1>
     </div>
+  </div>
+  <!-- --------- -->
 
-    <div class="flex-container" style="background-color: white">
-      <a href = "login.html" class = "registernow">Register Now!</a>
-    </div>
+  <div class="flex-container-row" style="background-color: #f28482">
+    <p class="homequestion">
+      Not what you're looking for? Look at our other options here!
+    </p>
+    <a class="viewcats" href="petlist.html">View Cats</a>
+  </div>
+</body>
 
-    <!-- This section needs to be linked to the database -->
-    <div class="flex-container-row" style="background-color: #f5cac3">
-      <img
-        src="FeaturedCat.jpg"
-        width="300em"
-        height="450em"
-        class="featured-image"
-      />
-      <div id="catWeek" class="flex-container">
-        <h1 style="font-size: 2rem">Cat of the week:</h1>
-        <h1 id="catname" class="featured">Featured Cat</h1>
-      </div>
-    </div>
-    <!-- --------- -->
-
-    <div class="flex-container-row" style="background-color: #f28482">
-      <p class="homequestion">
-        Not what you're looking for? Look at our other options here!
-      </p>
-      <a class="viewcats" href = "petlist.html">View Cats</a>
-    </div>
-  </body>
-
-  <footer
-    style="
+<footer style="
       background-color: #f7ede2;
       color: #fff;
       padding: 20px;
       display: flex;
       align-items: center;
-    "
-  >
-    <img
-      src="images/logo.png"
-      alt="Cat Haven Logo"
-      style="margin-right: 20px"
-    />
-    <div id="footer_text">
-      <a href="mailto:info@cathaven.com">info@cathaven.com</a><br />
-      <a href="https://www.instagram.com/cathavenbr/?hl=en">Instagram</a><br />
-      <a href="https://twitter.com/cathavenbr?lang=en">Twitter</a><br />
-      <a href="https://www.facebook.com/cathavenbatonrouge/">Facebook</a>
-    </div>
-  </footer>
+    ">
+  <img src="images/logo.png" alt="Cat Haven Logo" style="margin-right: 20px" />
+  <div id="footer_text">
+    <a href="mailto:info@cathaven.com">info@cathaven.com</a><br />
+    <a href="https://www.instagram.com/cathavenbr/?hl=en">Instagram</a><br />
+    <a href="https://twitter.com/cathavenbr?lang=en">Twitter</a><br />
+    <a href="https://www.facebook.com/cathavenbatonrouge/">Facebook</a>
+  </div>
+</footer>
+
 </html>

@@ -3,12 +3,16 @@ const params = new URLSearchParams(url.search);
 const catName = params.get("name");
 document.getElementById("meetname").textContent = `Meet ${catName}`;
 document.getElementById("statsname").textContent = `${catName}'s Stats`;
+document.getElementById("adoptname").textContent = `Adopt ${catName}`;
 fetch(`http://localhost:3000/api/users/cat/${catName}`)
   .then((response) => response.json())
   .then((data) => {
     document.getElementById(
       "birthday"
     ).textContent = `${data.BirthYear}/${data.BirthMonth}/${data.BirthDay}`;
+    pet_img = document.getElementById("catimage");
+    pet_img.src = `images/${catName}.jpg`;
+
     document.getElementById("age").textContent = `${2023 - data.BirthYear}`;
     document.getElementById("personality").textContent = `${data.Personality}`;
     document.getElementById("diet").textContent = `${data.Diet}`;
