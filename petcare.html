@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="styling.css">
 <head>
     <title>CatHaven</title>
+    <link rel="stylesheet" href="styling-petcare.css">
 </head>
 
 <nav>
     <header id="unique-navbar"></header>
     <script src="navbar.js"></script>
+    <script src = "petcare.js"></script>
 </nav>
-<main>
-    <section>
-        <h1 class="featured">Caring for Your Feline Friend - A Comprehensive Guide</h1>
-        <img src="https://unionlakepetservices.com/wp-content/uploads/2020/07/ULPS-Cat-grooming-AdobeStock_313891439.jpg">
-
-        <p>Properly caring for cats is crucial for their health and happiness. By providing them with balanced nutrition, regular veterinary check-ups, and a safe environment, we promote their physical well-being. Engaging them with toys and interactive play, as well as offering affection and social interaction, enhances their mental and emotional health. Regular grooming and a hazard-free home environment ensure their comfort and safety. As responsible cat owners, our commitment to their care fosters a deep and rewarding bond with our feline companions, leading to a fulfilling and joyous relationship.</p>
-        <h1 class="login"><b><u>Understanding Your Cat</u></b></h1>
-        <p> First we learn what type of cat you have and its breed habits. Then:
-            <li><b>Observe Body Language: </b>Pay attention to ears, tail, eyes, and posture.</li>
-            <li><b>Respecting Personal Space: </b>Allow cats to initiate interactions.</li>
-            <li><b>Vocalization Interpretation: </b>Learn to recognize meows, purrs, hisses, and chirps.</li>
-            <li><b>Pupil Dilation: </b>Monitor changes in pupil size to understand emotions.</li>
-            <li><b>Tail Language: </b>Observe tail movements for mood indications.</li>
-            <li><b>Vocalization: </b>Cats use different sounds to express themselves.</li>
-            <li><b>Grooming: </b>Cats groom as a sign of trust and affection.</li>
-            <li><b>Play for Bonding: </b>Engage in interactive play to strengthen the bond.</li>
-            <li><b>Recognize Signs of Affection: </b>Cats show affection through rubbing and slow blinks.</li>
-            <li><b>Provide Vertical Space: </b>Cats love to climb and perch in high places.</li>
-            <li><b>Respect Personal Space: </b>Allow cats to have alone time.</li> </p>
-
-        <h1 class="login"><b><u>Feeding and Nutrition</u></b></h1>
-        <p> <li> <b>Choose High-Quality Cat Food: </b> Selecting a high-quality commercial cat food is the foundation of a healthy diet for your cat. Look for products that are specifically formulated for cats and meet the nutritional standards set by veterinary organizations.</li>
-            <li> <b>Understand Nutritional Requirements: </b>Cats are obligate carnivores, which means they require a diet rich in animal-based proteins. Protein is crucial for maintaining muscle mass and supporting various bodily functions.</li>
-            <li><b>Avoid Dog Food or Human Food: </b>Never feed your cat dog food or rely solely on human food. Cats have specific nutrient requirements that may not be adequately met by these alternatives.</li>
-            <li> <b>Portion Control: </b>Feeding the appropriate portion size is essential to prevent obesity or malnutrition. Consider your cat's age, weight, and activity level when determining portion sizes.</li>
-            <li><b>Provide Fresh Water: </b>Ensure that your cat always has access to fresh and clean water. Proper hydration is essential for their overall health and helps with digestion.</li>
-            <li><b>Age-Appropriate Diets: </b>Kittens, adult cats, and senior cats have different nutritional needs. Choose food appropriate for your cat's life stage to support their specific requirements.</li>
-            <li><b>Treats in Moderation: </b>While treats can be a way to show affection, offer them in moderation. Many treats are high in calories and may not provide the necessary nutrients found in balanced cat food.</li>
-            <li><b>Monitor Allergies and Sensitivities: </b>Keep an eye out for any signs of food allergies or sensitivities, such as skin irritation or digestive issues. Consult with a veterinarian if you suspect any problems.</li> </p>
-
-        <h1 class="login"><b><u>Importance of Food & Play </u></b></h1>
-        <p> <li> <b>Physical Health: </b> Regular exercise helps cats maintain a healthy weight, build muscle tone, and improve their cardiovascular health. It also aids in preventing obesity, which can lead to various health issues.</li>
-            <li> <b>Mental Stimulation: </b>Playtime engages your cat's mind, preventing boredom and behavioral problems. Interactive play provides a healthy outlet for their hunting instincts and satisfies their need for mental challenges.</li>
-            <li><b>Bonding and Socialization: </b>Playing with your cat strengthens your bond and enhances their social skills. It builds trust and creates positive associations between you and your feline companion.</li>
-            <li> <b>Portion Control: </b>Feeding the appropriate portion size is essential to prevent obesity or malnutrition. Consider your cat's age, weight, and activity level when determining portion sizes.</li></p>
-
-    </section>
-</main>
-    <section>
-        <p> In conclusion caring for your cat is a responsibility that goes beyond providing food and shelter.
-        </p>
-    </section>
-
-<footer>
-    <p>Contact us for any questions or concerns related to cat care.</p>    
-</footer>
+<main id = "petcareMain">
+            <section class="flex-container">
+                <h1 style = "color: #84A59D">Pet Care Guidelines</h1>
+                <p class="subtitle">Essential care tips for your feline friend</p>
+                <div class = "petcareImageContainer">
+                    <img class = "petcare-image"src="https://unionlakepetservices.com/wp-content/uploads/2020/07/ULPS-Cat-grooming-AdobeStock_313891439.jpg" alt = "petcare image">
+                    </div>
+                <section class="flex-container-row">
+                    <article class="card-text">
+                        <h2>Feeding</h2>
+                        <p>Cats should be feed cat food that suits their life stage (kittens, adults, seniors). It's important to make sure they have a consistent supply of cat food & water</p>
+                    </article>
+                    
+                    <article class="card-text">
+                        <h2>Grooming</h2>
+                        <p>Regular grooming helps to ensure your cat's coat and skin are kept in top condition. It's also a good time to check for signs of health problems, especially fleas</p>
+                    </article>
+        
+                    <article class="card-text">
+                        <h2>Playing</h2>
+                        <p>Cats are playful animals and enjoy having toys and human interaction to keep them entertained. Playing with them also helps them to get the physical exercise they need</p>
+                    </article>
+                </section>
+                
+                <section class="flex-container-row">
+                    <article class="card-text">
+                        <h2>Health Check</h2>
+                        <p>Regular vet check-ups are essential to ensure any potential health issues are identified early. This way you can keep down unneccessary costs and make sure your cat is happy all the time</p>
+                    </article>
+                    
+                    <article class="card-text">
+                        <h2>Litter</h2>
+                        <p>Keep your cat's litter box clean. This not only helps with hygiene but also ensures that your cat uses the box regularly. If not, you can face many hygiene problems</p>
+                    </article>
+        
+                    <article class="card-text">
+                        <h2>Safety</h2>
+                        <p>Keep toxic substances, such as certain plants and foods, out of reach. Ensure windows and balconies are secure to prevent falls. This way your cat can stay healthy and happy</p>
+                    </article>
+                </section>
+                <p id = "petcareConclusion"> In conclusion caring for your cat is a very big responsibility for a pet owner, with enough research, care and love for you cat, you should be able to do a great job with your feline friend! Just remember to keep consistent and do your research and show them lots of love!</p>
+                </p>
+            </section>
+        </main>
+    <footer
+    style="
+      background-color: #f7ede2;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+    "
+  >
+    <img
+      src="images/logo.png"
+      alt="Cat Haven Logo"
+      style="margin-right: 20px"
+    />
+    <div id="footer_text">
+      <a href="mailto:info@cathaven.com">info@cathaven.com</a><br />
+      <a href="https://www.instagram.com/cathavenbr/?hl=en">Instagram</a><br />
+      <a href="https://twitter.com/cathavenbr?lang=en">Twitter</a><br />
+      <a href="https://www.facebook.com/cathavenbatonrouge/">Facebook</a>
+    </div>
+  </footer>
+  </html>
