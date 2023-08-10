@@ -1,4 +1,5 @@
 const URL = "http://localhost:3000/api/users";
+//registers the user and redirects to the homepage
 async function callRegister(username, password, email) {
   const data = {
     username: username,
@@ -24,6 +25,7 @@ async function callRegister(username, password, email) {
       console.error("Error:", error);
     });
 }
+//logs the user in stores the webtoken in localstorage
 async function callLogin(username, password) {
   const data = {
     username: username,

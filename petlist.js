@@ -1,10 +1,12 @@
 const URL = "http://localhost:3000/api/users/cats";
+//add styling class to text
 function makeCardText(text) {
   const card = document.createElement("card-text");
   console.log(text);
   card.innerText = text;
   return card;
 }
+//generates elements from the cats retrieved from the api
 async function getCats() {
   const result = await fetch(URL);
   result.json().then((data) => {
@@ -27,6 +29,7 @@ async function getCats() {
       petCard.append(makeCardText(pet.Gender));
       petCard.append(makeCardText(pet.Fee));
 
+      //eventlistener which will go to petpage for each pet
       petCard.addEventListener("click", () => {
         window.location.assign(`petspage.html?name=${pet.CatName}`);
       });

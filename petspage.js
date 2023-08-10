@@ -4,6 +4,7 @@ const catName = params.get("name");
 document.getElementById("meetname").textContent = `Meet ${catName}`;
 document.getElementById("statsname").textContent = `${catName}'s Stats`;
 document.getElementById("adoptname").textContent = `Adopt ${catName}`;
+//retrieve pet specific info and swap it into the page
 fetch(`http://localhost:3000/api/users/cat/${catName}`)
   .then((response) => response.json())
   .then((data) => {
